@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VehicleActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-black"
+        android:text="Upload Details"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_owner_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter Owner Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_vehicle_brand"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter vehicle brand"
+        app:layout_constraintEnd_toEndOf="@+id/edt_owner_name"
+        app:layout_constraintStart_toStartOf="@+id/edt_owner_name"
+        app:layout_constraintTop_toBottomOf="@+id/edt_owner_name" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_vehicle_rto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter vehicle RTO"
+        app:layout_constraintEnd_toEndOf="@+id/edt_vehicle_brand"
+        app:layout_constraintStart_toStartOf="@+id/edt_vehicle_brand"
+        app:layout_constraintTop_toBottomOf="@+id/edt_vehicle_brand" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_vehicle_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Enter vehicle number"
+        app:layout_constraintEnd_toEndOf="@+id/edt_vehicle_rto"
+        app:layout_constraintStart_toStartOf="@+id/edt_vehicle_rto"
+        app:layout_constraintTop_toBottomOf="@+id/edt_vehicle_rto" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/edt_vehicle_number"
+        app:layout_constraintStart_toStartOf="@+id/edt_vehicle_number"
+        app:layout_constraintTop_toBottomOf="@+id/edt_vehicle_number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_go_to_read_screen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Go To Read Vehicle"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_save"
+        app:layout_constraintStart_toStartOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_update"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Update Data"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_go_to_read_screen"
+        app:layout_constraintStart_toStartOf="@+id/btn_go_to_read_screen"
+        app:layout_constraintTop_toBottomOf="@+id/btn_go_to_read_screen" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete_data"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Delete Data"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_update"
+        app:layout_constraintStart_toStartOf="@+id/btn_update"
+        app:layout_constraintTop_toBottomOf="@+id/btn_update"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
